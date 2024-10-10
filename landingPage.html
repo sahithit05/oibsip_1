@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScreamStream - Your Horror Movie Guide</title>
+    <style>
+        body {
+    font-family: 'Nosifer', cursive;
+    line-height: 1.6;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+}
+
+button {
+    background-color: #8b0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Nosifer', cursive;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #a00000;
+}
+
+/* Header Styles */
+header {
+    background-color: #000;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 50px;
+    font-size: 25px;
+}
+
+nav ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #8b0000;
+}
+
+.logo {
+    height: 85px;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 20px;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #000;
+}
+
+/* Features Section Styles */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: #2a2a2a;
+}
+
+.feature {
+    text-align: center;
+    max-width: 300px;
+}
+
+.feature img {
+    width: 350px;
+    height: 230px;
+}
+
+/* Popular Movies Section Styles */
+.popular-movies {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.movie-poster img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.movie-poster img:hover {
+    transform: scale(1.05);
+}
+
+/* Testimonials Section Styles */
+.testimonials {
+    background-color: #2a2a2a;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonial {
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #000;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        margin-bottom: 30px;
+    }
+
+    nav ul {
+        display: none;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ2KpeZn9kCp9GQgaR9HI1pVwrY2XSD95dGg&s" alt="ScreamStream Logo" class="logo">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Discover Your Next Nightmare</h1>
+            <p>Unearth the best horror movies tailored to your darkest fears</p>
+            <button>Start Exploring</button>
+        </section>
+
+        <section id="features" class="features">
+            <div class="feature">
+                <img src="https://img.freepik.com/premium-photo/nightmare-horror-nightmare-generative-ai_556412-4634.jpg" alt="Personalized Recommendations">
+                <h2>Personalized Scares</h2>
+                <p>Our AI learns your taste in terror and suggests films that will keep you up at night.</p>
+            </div>
+
+            <div class="feature">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLJPEqlqr5MAjI9Gn8gnZw8bt4wKGbMtIPBA&s" alt="Extensive Catalogue">
+                <h2>Extensive Catalogue</h2>
+                <p>From classic slashers to modern psychological thrillers, we've got every flavor of fear.</p>
+            </div>
+
+            <div class="feature">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYy7Ihew2fr2K8gYd4hPQd6jSsTNFd4H3MdQ&s" alt="Horror Community">
+                <h2>Join the Cult</h2>
+                <p>Connect with fellow horror enthusiasts, share reviews, and discover hidden gems.</p>
+            </div>
+        </section>
+
+        <section id="popular" class="popular-movies">
+            <h2>Top Screams This Week</h2>
+            <div class="movie-grid">
+                <!-- Placeholder for movie posters -->
+                <div class="movie-poster"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRUOW58BgVn2VsTt9CbwIwD9DoUEC9qcOVcQ&s" alt="Horror Movie 1"></div>
+                <div class="movie-poster"><img src="https://preview.redd.it/jk5zw892oq581.png?auto=webp&s=562a017c8d8f1a710b604c8afe658988bfa30897" alt="Horror Movie 2"></div>
+                <div class="movie-poster"><img src="https://m.media-amazon.com/images/M/MV5BMjM1ZmViMmYtOGYzZC00YzhmLWE0MTMtMzNjYzcyNjEwYWRkXkEyXkFqcGc@._V1_.jpg" alt="Horror Movie 3"></div>
+                <div class="movie-poster"><img src="https://ih1.redbubble.net/image.5148400925.8677/flat,750x,075,f-pad,750x1000,f8f8f8.jpg" alt="Horror Movie 4"></div>
+            </div>
+            <button>See More</button>
+        </section>
+
+        <section id="testimonials" class="testimonials">
+            <h2>What Our Victims Say</h2>
+            <div class="testimonial">
+                <p>"I haven't slept well in weeks, thanks ScreamStream!"</p>
+                <span>- Sleepless in Seattle</span>
+            </div>
+            <div class="testimonial">
+                <p>"Found my new favorite movie. Now I'm afraid of my own shadow."</p>
+                <span>- Traumatized in Texas</span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ScreamStream. All rights reserved.</p>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
